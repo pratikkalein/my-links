@@ -1,0 +1,164 @@
+:root {
+    --accentColor: #3e3e3e;
+    --font: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#userPhoto {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 0 48px -11px rgba(0,0,0,0.22);
+    -moz-box-shadow: 1px 0 48px -11px rgba(0,0,0,0.22);
+    box-shadow: 1px 0 48px -11px rgba(0,0,0,0.22);
+}
+
+#userName {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.25;
+    margin-bottom: 4rem;
+    display: block;
+    font-family: var(--font);
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#name{
+    display: block;
+    font-weight:bold ;
+}
+
+@media only screen and (max-width: 403px) {
+ 
+    #name{
+        font-size: 0.7em;
+    }
+    #typedUsername{
+        font-size: 0.5em;
+    }
+    #userName{
+        margin: 0;
+    }
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.705);
+    transition: 0.5s;
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.footer:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#links {
+    max-width: 675px;
+    width: 100%;
+    display: block;
+    margin: 27px auto;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: var(--accentColor);
+    font-family: var(--font);
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+
+.link > span {
+    margin-left: 5px;
+}
+
+.link svg {
+    fill: var(--accentColor);
+    transition: .5s;
+}
+
+#mastodon-icon > path:nth-child(1) {
+    fill: var(--accentColor);
+    transition: .5s;
+}
+
+#mastodon-icon > path:nth-child(2) {
+    fill: #ffffff;
+    transition: .5s;
+}
+
+.link:hover {
+    background-color: #3e3e3e;
+    color: #ffffff;
+    box-shadow: 0 0 31px rgba(0, 0, 0, 0.247);
+    font-weight: 100;
+    transition: .5s;
+}
+
+.link:hover svg {
+    fill: #ffffff;
+    transition: .5s;
+}
+
+.link:hover #mastodon-icon > path:nth-child(1) {
+    fill: #ffffff;
+    transition: .5s;
+}
+
+.link:hover #mastodon-icon > path:nth-child(2) {
+    fill: var(--accentColor);
+    transition: .5s;
+}
+
+/* Colors for social links*/
+
+.hvr-grow {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
