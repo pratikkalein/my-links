@@ -35,7 +35,7 @@ body {
     font-size: 2rem;
     font-weight: 200;
     line-height: 1.25;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     display: block;
     font-family: var(--font);
     width: auto;
@@ -48,7 +48,7 @@ body {
     font-weight:bold ;
 }
 
-@media only screen and (max-width: 403px) {
+@media only screen and (max-width: 500px) {
  
     #name{
         font-size: 0.7em;
@@ -58,6 +58,11 @@ body {
     }
     #userName{
         margin: 0;
+    }
+    #links {
+        
+        width: 85% !important;
+        margin: 27px auto;
     }
 }
 
